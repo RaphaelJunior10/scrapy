@@ -1,8 +1,5 @@
 import os, sys, time, threading, itertools
 
-from selenium.webdriver.common.by import By
-
-
 try:
     import json
 except:
@@ -12,10 +9,12 @@ finally:
 
 try:
     from selenium import webdriver
+    from selenium.webdriver.common.by import By
 except:
     os.system('pip install selenium')
 finally:
     from selenium import webdriver
+    from selenium.webdriver.common.by import By
 
 try:
     from webdriver_manager.chrome import ChromeDriverManager
